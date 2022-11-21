@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP: Código-Fonte de include/Paciente.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Trabalho Prático UFMG</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Paciente.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PACIENTE_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PACIENTE_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Pessoa.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_paciente.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_paciente.html">Paciente</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_pessoa.html">Pessoa</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">string</span> relato;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">string</span> dataUltimaConsulta;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">string</span> medicacaoQueToma;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_paciente.html#ae573ff3b60736366eef0d05bf46f407b">imprimir</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_paciente.html#a7e50d7ad27d000fc371484a4ba34cfc9">setRelato</a>(<span class="keywordtype">string</span> rel);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">string</span> <a class="code hl_function" href="class_paciente.html#a92f54e00a7c5a13f7c249066c2f427b7">getRelato</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_paciente.html#a14b5219f5f380a569e406cffe8a0caa1">setDUC</a>(<span class="keywordtype">string</span> duq);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordtype">string</span> <a class="code hl_function" href="class_paciente.html#a44789c2344f76964e01c961039029308">getDUC</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_paciente.html#ab45c10c2f5eba11cdf506a916cda7129">setMQT</a>(<span class="keywordtype">string</span> mqt);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">string</span> <a class="code hl_function" href="class_paciente.html#aeaa01f99981d4ea0f8056a698602d5e5">getMQT</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_paciente_html"><div class="ttname"><a href="class_paciente.html">Paciente</a></div><div class="ttdef"><b>Definition:</b> Paciente.hpp:9</div></div>
+<div class="ttc" id="aclass_paciente_html_a14b5219f5f380a569e406cffe8a0caa1"><div class="ttname"><a href="class_paciente.html#a14b5219f5f380a569e406cffe8a0caa1">Paciente::setDUC</a></div><div class="ttdeci">void setDUC(string duq)</div><div class="ttdoc">Seta o atributo dataUltimaConsulta.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:40</div></div>
+<div class="ttc" id="aclass_paciente_html_a44789c2344f76964e01c961039029308"><div class="ttname"><a href="class_paciente.html#a44789c2344f76964e01c961039029308">Paciente::getDUC</a></div><div class="ttdeci">string getDUC()</div><div class="ttdoc">Retorna o atributo dataUltimaConsulta.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:56</div></div>
+<div class="ttc" id="aclass_paciente_html_a7e50d7ad27d000fc371484a4ba34cfc9"><div class="ttname"><a href="class_paciente.html#a7e50d7ad27d000fc371484a4ba34cfc9">Paciente::setRelato</a></div><div class="ttdeci">void setRelato(string rel)</div><div class="ttdoc">Seta o atributo relato.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:20</div></div>
+<div class="ttc" id="aclass_paciente_html_a92f54e00a7c5a13f7c249066c2f427b7"><div class="ttname"><a href="class_paciente.html#a92f54e00a7c5a13f7c249066c2f427b7">Paciente::getRelato</a></div><div class="ttdeci">string getRelato()</div><div class="ttdoc">Retorna o atributo relato.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:30</div></div>
+<div class="ttc" id="aclass_paciente_html_ab45c10c2f5eba11cdf506a916cda7129"><div class="ttname"><a href="class_paciente.html#ab45c10c2f5eba11cdf506a916cda7129">Paciente::setMQT</a></div><div class="ttdeci">void setMQT(string mqt)</div><div class="ttdoc">Seta o atributo medicacaoQueToma.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:66</div></div>
+<div class="ttc" id="aclass_paciente_html_ae573ff3b60736366eef0d05bf46f407b"><div class="ttname"><a href="class_paciente.html#ae573ff3b60736366eef0d05bf46f407b">Paciente::imprimir</a></div><div class="ttdeci">void imprimir()</div><div class="ttdoc">Imprime o paciente.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:7</div></div>
+<div class="ttc" id="aclass_paciente_html_aeaa01f99981d4ea0f8056a698602d5e5"><div class="ttname"><a href="class_paciente.html#aeaa01f99981d4ea0f8056a698602d5e5">Paciente::getMQT</a></div><div class="ttdeci">string getMQT()</div><div class="ttdoc">Retorna o atributo medicacaoQueToma.</div><div class="ttdef"><b>Definition:</b> Paciente.cpp:76</div></div>
+<div class="ttc" id="aclass_pessoa_html"><div class="ttname"><a href="class_pessoa.html">Pessoa</a></div><div class="ttdef"><b>Definition:</b> Pessoa.hpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
