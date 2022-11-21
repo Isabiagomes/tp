@@ -23,9 +23,9 @@ void Consulta::imprimir()
  */
 void Consulta::setData(string dt)
 {
-    if (dt.length() != 10)
-         throw std::runtime_error("Data inválida. Formato dd/mm/aaaa");
-    else if (dt[2] != '/' || dt[5] != '/')
+    if (dt.length() != 10 && dt != "")
+        throw std::runtime_error("Data inválida. Formato dd/mm/aaaa");
+    else if ((dt[2] != '/' || dt[5] != '/') && dt != "")
         throw std::runtime_error("Data inválida. Formato dd/mm/aaaa");
     else
         this->data = dt;

@@ -122,8 +122,8 @@ string Pessoa::getEndereco()
  */
 void Pessoa::setCpf(string cpf)
 {
-    if (cpf.length() != 11 || !ValidaCPFCNPJ::validaCPF(cpf))
-        throw std::runtime_error("CPF inválido");
+    if ((cpf.length() != 11 || !ValidaCPFCNPJ::validaCPF(cpf)) && cpf != "")
+        throw std::runtime_error("CPF invalido");
     else
         this->cpf = cpf;
 }

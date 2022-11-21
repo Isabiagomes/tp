@@ -86,9 +86,9 @@ int main()
                     break;
             }
         }
-        catch(const std::exception& e)
+        catch (exception& e)
         {
-            std::cerr << e.what() << '\n';
+            cout << e.what() << endl;
             cout << endl << "Aperte qualquer tecla para continuar...";
             cin.get();
         }
