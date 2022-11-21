@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# ignore bin and build folders
+bin/
+build/
+
+#ignore .vscode folders
+.vscode/
