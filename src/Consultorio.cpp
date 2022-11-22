@@ -76,8 +76,8 @@ bool Consultorio::removerPaciente(string cpf)
         if (this->vetPaciente[i].getCpf() == cpf)
         {
             this->vetPaciente[i].setCpf("");
-        }   
-        break;     
+            break;
+        }
     } 
     this->contPaciente--;
     cout << endl << "Aperte qualquer tecla para continuar...";
