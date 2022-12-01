@@ -1,7 +1,7 @@
 #include "doctest"
 #include "Consulta.hpp"
 
-// test get and set data structures
+// test get and set data structures (formato dd/mm/yyyy)
 TEST_CASE("Teste get e set data")
 {
 	Consulta c;
@@ -12,7 +12,7 @@ TEST_CASE("Teste get e set data")
 	CHECK_THROWS(c.setData("01/01/20200"));
 }
 
-// test get and set hora
+// test get and set hora (formato 00:00)
 TEST_CASE("Teste get e set hora")
 {
 	Consulta c;
@@ -23,7 +23,7 @@ TEST_CASE("Teste get e set hora")
 	CHECK_THROWS(c.setHora("12:0"));
 }
 
-// test get and set paciente
+// test get and set paciente (somente string)
 TEST_CASE("Teste get e set paciente")
 {
 	Consulta c;
@@ -33,7 +33,7 @@ TEST_CASE("Teste get e set paciente")
 	CHECK(c.getPaciente().getNome() == "João");
 }
 
-// test get and set medico
+// test get and set medico (somente string)
 TEST_CASE("Teste get e set medico")
 {
 	Consulta c;
