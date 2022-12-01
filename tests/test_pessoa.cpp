@@ -1,7 +1,7 @@
 #include "doctest"
 #include "Pessoa.hpp"
 
-// test get and set nome
+// test get and set nome (Apenas string)
 TEST_CASE("Teste get e set nome")
 {
 	Pessoa p;
@@ -9,7 +9,7 @@ TEST_CASE("Teste get e set nome")
 	CHECK(p.getNome() == "Joao");
 }
 
-// test get and set sexo
+// test get and set sexo (Apenas char)
 TEST_CASE("Teste get e set sexo")
 {
 	Pessoa p;
@@ -19,7 +19,7 @@ TEST_CASE("Teste get e set sexo")
 	CHECK_THROWS(p.setSexo('X'));
 }
 
-// test get and set endereco
+// test get and set endereco (recebe int e string)
 TEST_CASE("Teste get e set endereco")
 {
 	Pessoa p;
@@ -27,7 +27,7 @@ TEST_CASE("Teste get e set endereco")
 	CHECK(p.getEndereco() == "Rua 1");
 }
 
-// test get and set cpf
+// test get and set cpf (apenas int com 11 dígitos)
 TEST_CASE("Teste get e set cpf")
 {
 	Pessoa p;
@@ -38,7 +38,7 @@ TEST_CASE("Teste get e set cpf")
 	CHECK(p.getCpf() == "45022286050");
 }
 
-// test get and set telefone
+// test get and set telefone (somente int)
 TEST_CASE("Teste get e set telefone")
 {
 	Pessoa p;
@@ -46,7 +46,7 @@ TEST_CASE("Teste get e set telefone")
 	CHECK(p.getTelefone() == "123456789");
 }
 
-// test get and set identidade
+// test get and set identidade (somente int)
 TEST_CASE("Teste get e set identidade")
 {
 	Pessoa p;
