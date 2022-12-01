@@ -1,7 +1,7 @@
 #include "doctest"
 #include "Paciente.hpp"
 
-// test get and set relato
+// test get and set relato (somente string)
 TEST_CASE("Teste get e set relato")
 {
 	Paciente p;
@@ -9,7 +9,7 @@ TEST_CASE("Teste get e set relato")
 	CHECK(p.getRelato() == "Dor de cabeça");
 }
 
-// test get and set DUC
+// test get and set DUC (formato da data dd/mm/yyyy)
 TEST_CASE("Teste get e set DUC")
 {
 	Paciente p;
@@ -20,7 +20,7 @@ TEST_CASE("Teste get e set DUC")
 	CHECK_THROWS(p.setDUC("01/01/20200"));
 }
 
-// test get and set mqt
+// test get and set mqt (somente string)
 TEST_CASE("Teste get e set mqt")
 {
 	Paciente p;
