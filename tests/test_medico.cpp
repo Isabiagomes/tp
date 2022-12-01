@@ -1,7 +1,7 @@
 #include "doctest"
 #include "Medico.hpp"
 
-// test get and set crm
+// test get and set crm (somente int)
 TEST_CASE("Teste get e set crm")
 {
 	Medico m;
@@ -9,7 +9,7 @@ TEST_CASE("Teste get e set crm")
 	CHECK(m.getCRM() == 123456);
 }
 
-// test get and set especialidade
+// test get and set especialidade 9somente string)
 TEST_CASE("Teste get e set especialidade")
 {
 	Medico m;
