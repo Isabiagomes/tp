@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {    
     setlocale(LC_ALL, "Portuguese");
-    int controle, a1;
+    int controle, controleCatch = 0, a1;
     string a2, a3;
 
     Consultorio A("Nome_do_Consultorio", "Rua JK - 1000", "+55(88)91234-5678");
@@ -22,10 +22,14 @@ int main()
     {
         try
         {
-            cout << "\n\n\nDigite: \n=> 1 para Cadastrar um médico \n=> 2 para Cadastrar um paciente \n=> 3 para Cadastrar uma consulta \n=> 4 para Imprimir dados de um médico \n=> 5 para Imprimir Consultas \n=> 6 para Imprimir dados de um paciente \n=> 7 para ver Dados de uma consulta \n=> 8 para Remover um médico \n=> 9 para Remover um paciente \n=> 10 para Remover uma consulta \n=> 0 para sair." << endl;
-            cin >> controle;
-            cout << "\n\n\n";
-            cin.ignore();
+            if(controleCatch == 0)
+            {
+                cout << "\n\n\nDigite: \n=> 1 para Cadastrar um médico \n=> 2 para Cadastrar um paciente \n=> 3 para Cadastrar uma consulta \n=> 4 para Imprimir dados de um médico \n=> 5 para Imprimir Consultas \n=> 6 para Imprimir dados de um paciente \n=> 7 para ver Dados de uma consulta \n=> 8 para Remover um médico \n=> 9 para Remover um paciente \n=> 10 para Remover uma consulta \n=> 0 para sair." << endl;
+                cin >> controle;
+                cout << "\n\n\n";
+                cin.ignore();
+            }
+
             switch (controle)
             {
                 case 1:
@@ -85,11 +89,14 @@ int main()
                     cin.get();
                     break;
             }
+
+            controleCatch = 0;
         }
         catch (exception& e)
         {
             cout << e.what() << endl;
-            cout << endl << "Aperte qualquer tecla para continuar...";
+            controleCatch = 1;
+            cout << endl << "Insira os dados corretamente para continuar...";
             cin.get();
         }
 
