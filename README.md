@@ -77,6 +77,9 @@ Para começar a utilizar, após a instalação, basta rodar:
 
 ### Flash Cards User stories:
 
+<img src="img/flash1.png"/>
+<img src="img/flash2.png"/>
+<img src="img/flash3.png"/>
 
 
 ## Contruibuindo
