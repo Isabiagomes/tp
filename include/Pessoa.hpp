@@ -17,7 +17,7 @@ class Pessoa
         string identidade;        
 
     public:
-        void imprimir();
+        virtual void imprimir() = 0;
         void cadastro();
         void setNome(string nom);
         string getNome();

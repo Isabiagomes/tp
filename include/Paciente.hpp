@@ -13,7 +13,7 @@ class Paciente : public Pessoa {
         string medicacaoQueToma;
 
     public:
-        void imprimir();
+        virtual void imprimir() override;
         void setRelato(string rel);
         string getRelato();
         void setDUC(string duq);

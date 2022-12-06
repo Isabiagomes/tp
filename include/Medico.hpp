@@ -12,7 +12,7 @@ class Medico : public Pessoa {
         string especialidade;
 
     public:
-        void imprimir();
+        virtual void imprimir() override;
         void setCRM(int crm);
         int getCRM();
         void setEspecialidade(string esp);
