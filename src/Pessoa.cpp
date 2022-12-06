@@ -38,6 +38,20 @@ void Pessoa::cadastro()
 }
 
 /**
+ * @brief Imprime a pessoa
+ * 
+ */
+void Pessoa::imprimir()
+{
+    cout << "\nNome: " << this->nome << endl;
+    cout << "\nSexo: " << this->sexo << endl;
+    cout << "\nEndereço: " << this->endereco << endl;
+    cout << "\nCPF: " << this->cpf << endl;
+    cout << "\nTelefone: " << this->telefone << endl;
+    cout << "\nIdentidade: " << this->identidade << endl;
+}
+
+/**
  * @brief Seta o atributo nome
  * 
  * @param nom 

@@ -346,7 +346,9 @@ void Consultorio::imprimeMedico()
     {
         if(this->medico[i].getCRM() == aux)
         {
-            this->medico[i].imprimir();
+            Pessoa* p;
+            p = &this->medico[i];
+            p->imprimir();
             break;
         }
     }
