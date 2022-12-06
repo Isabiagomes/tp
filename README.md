@@ -69,6 +69,11 @@ Para começar a utilizar, após a instalação, basta rodar:
 
 <p align="right">(<a href="#top">Voltar para o topo</a>)</p>
 
+## Modelagem
+
+Para criar a modelagem, utilizamos o docs.
+[Link para a modelagem](https://docs.google.com/document/d/1Lq4Q-MzMZQhAT7XEQmcoBbQx_PyJgvEPWrLXaGbKWrg/edit)
+
 ## Contruibuindo
 
 As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são **muito apreciadas**.
