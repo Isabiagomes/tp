@@ -6,7 +6,12 @@
  */
 void Paciente::imprimir()
 {
-    Pessoa::imprimir();
+    cout << "\nNome: " << this->nome << endl;
+    cout << "\nSexo: " << this->sexo << endl;
+    cout << "\nEndereço: " << this->endereco << endl;
+    cout << "\nCPF: " << this->cpf << endl;
+    cout << "\nTelefone: " << this->telefone << endl;
+    cout << "\nIdentidade: " << this->identidade << endl;
     cout << "\nRelato: " << this->relato << endl;
     cout << "\nÚltima consulta: " << this->dataUltimaConsulta << endl;
     cout << "\nMedicamento ativo: " << this->medicacaoQueToma << endl;
