@@ -71,8 +71,16 @@ Para começar a utilizar, após a instalação, basta rodar:
 
 ## Modelagem
 
-Para criar a modelagem, utilizamos o docs.
-[Link para a modelagem](https://docs.google.com/document/d/1Lq4Q-MzMZQhAT7XEQmcoBbQx_PyJgvEPWrLXaGbKWrg/edit)
+### Diagrama de Classes:
+
+<img src="img/diagrama.png"/>
+
+### Flash Cards User stories:
+
+<img src="img/flash1.png"/>
+<img src="img/flash2.png"/>
+<img src="img/flash3.png"/>
+
 
 ## Contruibuindo
 
