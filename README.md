@@ -2,7 +2,7 @@
 
 # TP
 
-> Nosso TP é uma abstração de sistema de hospital.
+> Nosso TP é uma abstração de sistema de hospital,gerência de cadastros, remoção e leitura de informações das classes envolvidas (consulta, médico e paciente). Grande parte das ações ocorrem no consulório, classe responsável neste controle de ações do código. Logo, o trabalho baseou-se em um sistema de gestão hospitalar básico para o auxílio de dados pessoais e gerais de uma clínica.
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Tamanho][tamanho-shield]][tamanho-url]
