@@ -2,7 +2,7 @@
 
 # TP
 
-> Nosso TP é uma abstração de sistema de hospital.
+> Nosso TP é uma abstração de sistema de hospital,gerência de cadastros, remoção e leitura de informações das classes envolvidas (consulta, médico e paciente). Grande parte das ações ocorrem no consulório, classe responsável neste controle de ações do código. Logo, o trabalho baseou-se em um sistema de gestão hospitalar básico para o auxílio de dados pessoais e gerais de uma clínica.
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Tamanho][tamanho-shield]][tamanho-url]
@@ -80,6 +80,36 @@ Para começar a utilizar, após a instalação, basta rodar:
 <img src="img/flash1.png"/>
 <img src="img/flash2.png"/>
 <img src="img/flash3.png"/>
+
+### Critérios de aceitação
+
+#### Critério 1
+
+> Como paciente quero ter meus dados cadastrados e/ou removidos, marcar e/ou desmarcar minhas consultas médicas.
+
+Critérios de aceitação:
+* Opção de me  cadastrar.
+* Opção de remover minha consulta.
+
+#### Critério 2
+
+> Como médico gostaria de me cadastrar/remover no sistema, imprimir as consultas de minha responsabilidade.
+
+Critérios de aceitação:
+* Opção de cadastrar dados tais como CRM e especialidade.
+* Opção de me remover do sistema do consultório.
+* Opção de ver os meus dados cadastrais.
+
+#### Critério 3
+
+> Como dono/responsável pelo consultório gostaria de ter um limite de pacientes e médicos e ter acesso aos dados completos de uma consulta.
+
+Critérios de aceitação:
+* Opção de limitar e contar quantos médicos e pacientes e consultas.
+* Opção de imprimir imprimir data, hora, paciente e médico de uma consulta em
+específico.
+* Opção de remover do sistema do consultório um médico e/ou paciente.
+* Opção de imprimir pacientes e médicos, separadamente, ou em lista.
 
 
 ## Contruibuindo
